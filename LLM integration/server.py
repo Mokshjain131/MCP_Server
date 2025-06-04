@@ -25,7 +25,7 @@ def get_knowledge_base() -> str:
         # Format the knowledge base as a string
         kb_text = "Here is the retrieved knowledge base:\n\n"
 
-        if isinstance(kb_data, list):
+        if isinstance(kb_data, list):   
             for i, item in enumerate(kb_data, 1):
                 if isinstance(item, dict):
                     question = item.get("question", "Unknown question")

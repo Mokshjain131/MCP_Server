@@ -17,7 +17,7 @@ def hello(name: str):
 
 # Run the server
 if __name__ == "__main__":
-    transport = "sse"
+    transport = "stdio"
     if transport == "stdio":
         print("Running server with stdio transport")
         mcp.run(transport="stdio")
